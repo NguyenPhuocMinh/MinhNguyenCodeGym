@@ -6,9 +6,9 @@ var diemhoahoc = parseInt(prompt("Hóa Học"));
 var diemsinhhoc = parseInt(prompt("Sinh Học"));
 var diemtrungbinh = (diemvatli + diemhoahoc + diemsinhhoc)/3;
 function showDiemTrungBinh() {
-    document.write("diem trung binh" + diemtrungbinh)
+    document.write("Điểm trung bình là " + diemtrungbinh)
 }
 var tongdiem = diemvatli + diemhoahoc + diemsinhhoc;
 function showTongDiem() {
-    document.write("tong diem" + tongdiem)
+    document.write("Tổng điểm là " + tongdiem)
 }
