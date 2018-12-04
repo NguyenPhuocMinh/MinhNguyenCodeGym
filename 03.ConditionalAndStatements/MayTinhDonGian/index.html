@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ứng Dụng Mấy Tính</title>
+    <h1>Caculator</h1>
+</head>
+
+<body>
+    <div id="maytinh" style="border: 1px black solid; width: 120px; padding: 20px 20px 20px 20px">
+        <form>
+            <input type="text" id="result" style="width:100px;" /><br><br>
+            <input type="button" value="1" onclick="result.value+=this.value" />
+            <input type="button" value="2" onclick="result.value+=this.value" />
+            <input type="button" value="3" onclick="result.value+=this.value" />
+            <input type="button" value="+" style="width:24px;" onclick="result.value+=this.value" />
+            <br><br>
+            <input type="button" value="4" onclick="result.value+=this.value" />
+            <input type="button" value="5" onclick="result.value+=this.value" />
+            <input type="button" value="6" onclick="result.value+=this.value" />
+            <input type="button" value="-" style="width:24px;" onclick="result.value+=this.value" />
+            <br><br>
+            <input type="button" value="7" onclick="result.value+=this.value" />
+            <input type="button" value="8" onclick="result.value+=this.value" />
+            <input type="button" value="9" onclick="result.value+=this.value" />
+            <input type="button" value="*" style="width:24px;" onclick="result.value+=this.value" />
+            <br><br>
+            <input type="button" value="C" style="width:24px;" onclick="result.value=''" />
+            <input type="button" value="0" onclick="result.value+=this.value" />
+            <input type="button" value="=" style="width:23px;" onclick="result.value= eval(result.value)" />
+            <input type="button" value="/" style="width:24px;" onclick="result.value+=this.value" />
+        </form>
+    </div>
+    <br></br>
+    <p>Click me the move right</p>
+    <input type="button" value="Click Me" onclick="move()" ; />
+    <script>
+        var lator = null;
+        lator = document.getElementById("maytinh");
+        function init() {
+            lator = document.getElementById("maytinh");
+            lator.style.position = 'relative';
+            lator.style.left = '0px';
+        }
+        function move() {
+            lator.style.left = parseInt(lator.style.left) + 10 + 'px';
+        }
+        window.onload = init;
+    </script>
+</body>
+
+</html>
