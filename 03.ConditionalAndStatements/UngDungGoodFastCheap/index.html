@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hack não</title>
+</head>
+
+<body>
+    <input type="checkbox" onclick="good()" id="ckbGood">Good<br></br>
+    <input type="checkbox" onclick="cheap()" id="ckbCheap">Cheap<br></br>
+    <input type="checkbox" onclick="fast()" id="ckbFast">Fast<br></br>
+    <script>
+        function good() {
+            var isGood = document.getElementById("ckbGood").checked;
+            var isCheap = document.getElementById("ckbCheap").checked;
+            var isFast = document.getElementById("ckbFast").checked;
+
+            if (isGood && isCheap) {
+                document.getElementById("ckbFast").checked = false;
+            }
+        }
+        function cheap() {
+            var isGood = document.getElementById("ckbGood").checked;
+            var isCheap = document.getElementById("ckbCheap").checked;
+            var isFast = document.getElementById("ckbFast").checked;
+
+            if (isCheap && isFast) {
+                document.getElementById("ckbGood").checked = false;
+            }
+        }
+        function fast() {
+            var isGood = document.getElementById("ckbGood").checked;
+            var isCheap = document.getElementById("ckbCheap").checked;
+            var isFast = document.getElementById("ckbFast").checked;
+
+            if (isFast && isGood) {
+                document.getElementById("ckbCheap").checked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
