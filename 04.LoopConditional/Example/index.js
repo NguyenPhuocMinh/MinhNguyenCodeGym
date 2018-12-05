@@ -67,7 +67,7 @@ do {
         break;  
     }
      h++;
-} while (h < students.length ) ;
+} while (h < students.length );
 
 
 

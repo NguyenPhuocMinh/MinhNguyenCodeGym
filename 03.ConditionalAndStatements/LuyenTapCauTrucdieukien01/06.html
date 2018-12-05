@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hoa hồng nhận được</title>
+    <p id="showTien"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseFloat(prompt("Tiền bán được "));
+        var result = x * 0.5; var result1 = x * 0.3; var result2 = x * 0.1;
+        if (x < 3000000 && x > 2000000) {
+            document.getElementById("showTien").innerHTML = "Hoa hồng tháng này là " + result + "VNĐ";
+        } else if (x < 2000000 && x > 1000000) {
+            document.getElementById("showTien").innerHTML = "Hoa hồng tháng này là " + result1 + "VNĐ";
+        } else {
+            document.getElementById("showTien").innerHTML = "Hoa hồng tháng này là " + result2 + "VNĐ";
+        }
+    </script>
+</body>
+
+</html>
