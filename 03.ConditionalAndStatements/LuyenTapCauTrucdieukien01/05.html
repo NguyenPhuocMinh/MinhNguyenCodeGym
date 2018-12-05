@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Xếp hạng học lực của học sinh</title>
+    <p id="diem"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseInt(prompt("Nhập điểm học sinh"));
+        if (x >= 75) {
+            document.getElementById("diem").innerHTML = "Loại A";
+        } else if (x < 75 && x > 60) {
+            document.getElementById("diem").innerHTML = "Loại B";
+        } else if (x <= 60 && x > 45) {
+            document.getElementById("diem").innerHTML = "Loại C";
+        } else if (x <= 45 && x > 35 ) {
+            document.getElementById("diem").innerHTML = "Loại D";
+        } else {
+            document.getElementById("diem").innerHTML = "Ngoại Hạng";
+        }
+    </script>
+</body>
+
+</html>

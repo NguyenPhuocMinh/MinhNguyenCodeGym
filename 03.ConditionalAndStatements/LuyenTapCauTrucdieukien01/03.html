@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Số nguyên</title>
+    <p id="soA"></p>
+</head>
+
+<body>
+    <script>
+        var value = parseFloat(prompt("Nhập số nguyên"));
+        if (value > 0) {
+            document.getElementById("soA").innerHTML = "Số này lớn hơn 0";
+        } else if (value == 0) {
+            document.getElementById("soA").innerHTML = "Số này bằng 0";
+        } else {
+            document.getElementById("soA").innerHTML = "Sô này nhỏ hơn 0";
+        }
+    </script>
+
+</body>
+
+</html>

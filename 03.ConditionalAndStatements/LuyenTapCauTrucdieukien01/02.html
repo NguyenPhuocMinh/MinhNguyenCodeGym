@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nhập tuổi học sinh</title>
+    <p id="tuoi"></p>
+</head>
+
+<body>
+    <script>
+        var age = parseInt(prompt("Nhập tuổi học sinh lớp 10"));
+        if (age == 16) {
+            document.getElementById("tuoi").innerHTML = "Bạn đã đủ điều kiện là học sinh lớp 10";
+        } else {
+            document.getElementById("tuoi").innerHTML = "Bạn không đủ điều kiện";
+        }
+    </script>
+
+</body>
+
+</html>

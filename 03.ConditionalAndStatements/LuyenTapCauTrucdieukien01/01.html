@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bài Kiểm tra 2 số a,b</title>
+    <p id="result"></p>
+</head>
+
+<body>
+    <script>
+        var a = parseFloat(prompt("Nhập số a"));
+        var b = parseFloat(prompt("Nhập số b"));
+
+        if (a % b == 0) {
+            document.getElementById("result").innerHTML = "a chia hết cho b";
+        } else {
+            document.getElementById("result").innerHTML = "a không chia hết cho b";
+        }
+    </script>
+</body>
+
+</html>

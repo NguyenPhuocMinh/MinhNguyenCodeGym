@@ -13,14 +13,12 @@
         function good() {
             var isGood = document.getElementById("ckbGood").checked;
             var isCheap = document.getElementById("ckbCheap").checked;
-            var isFast = document.getElementById("ckbFast").checked;
 
             if (isGood && isCheap) {
                 document.getElementById("ckbFast").checked = false;
             }
         }
         function cheap() {
-            var isGood = document.getElementById("ckbGood").checked;
             var isCheap = document.getElementById("ckbCheap").checked;
             var isFast = document.getElementById("ckbFast").checked;
 
@@ -30,7 +28,6 @@
         }
         function fast() {
             var isGood = document.getElementById("ckbGood").checked;
-            var isCheap = document.getElementById("ckbCheap").checked;
             var isFast = document.getElementById("ckbFast").checked;
 
             if (isFast && isGood) {
