@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chuyển Độ C Sang Độ F</title>
+    <p id="showDoF"></p>
+</head>
+
+<body>
+    <script>
+        var doC = parseFloat(prompt("Nhập Độ C"));
+        var doF = doC * 9 / 5 + 32;
+        if (doC != doF) {
+            document.getElementById("showDoF").innerHTML = " Độ F = " + doF + " doC";
+        }
+    </script>
+</body>
+
+</html>

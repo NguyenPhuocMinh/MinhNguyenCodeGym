@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lãi suất ngân hàng</title>
+    <p id="showT"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseFloat(prompt("Nhập số tiền đã gửi"));
+        var a = parseFloat(prompt("Nhập lãi suất r%"));
+        var b = parseFloat(prompt("Nhập số tháng lấy lãi"));
+        var t1; var t2;
+        if (a == 0.005) {
+            t1 = x * (Math.pow((1 + 0.5 / 100), b)); document.getElementById("showT").innerHTML = "Vốn lẫn lãi của bạn là " + t1 + " VNĐ ";
+        } else {
+            if (a == 0.007) {
+                t2 = x * (Math.pow((1 + 0.7 / 100), b)); document.getElementById("showT").innerHTML = "Vốn lẫn lãi của bạn là " + t2 + " VNĐ ";
+            }
+        }
+    
+
+
+        
+
+    </script>
+</body>
+
+</html>

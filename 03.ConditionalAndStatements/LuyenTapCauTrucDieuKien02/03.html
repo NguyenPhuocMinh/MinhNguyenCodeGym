@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diện Tích Hình Vuông</title>
+    <p id="showS"></p>
+</head>
+
+<body>
+    <script>
+        var a = parseFloat(prompt("Nhập cạnh a"));
+        var s = a * a;
+        if (a != 0) {
+            document.getElementById("showS").innerHTML = " S = " + s + " m2";
+        } else {
+            document.getElementById("showS").innerHTML = " Không có kết quả ";
+        }
+
+    </script>
+</body>
+
+</html>

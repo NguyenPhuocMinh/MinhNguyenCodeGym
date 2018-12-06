@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thuế thu nhập cá nhân</title>
+    <p id="showResult"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseFloat(prompt("Nhập số tiền lương hàng tháng"));
+        var x1; var x2; var x3;
+        if (x <= 5000000) {
+            x1 = x * 5 / 100; document.getElementById("showResult").innerHTML = "Tiền thuế bạn phải đóng là " + x1 + " VNĐ";
+        } else {
+            if (x > 5000000 && x <= 10000000) {
+                x2 = x * 10 / 100 - 250000; document.getElementById("showResult").innerHTML = "Tiền thuế bạn phải đóng là " + x2 + " VNĐ";
+            } else {
+                if (x > 10000000 && x <= 18000000) {
+                    x3 = x * 15 / 100 - 750000; document.getElementById("showResult").innerHTML = "Tiền thuế bạn phải đóng là " + x3 + " VNĐ";
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

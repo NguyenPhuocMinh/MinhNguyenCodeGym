@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kiểm tra số tuổi</title>
+    <p id="showCheck"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseFloat(prompt("Nhập tuổi"));
+        if (x > 0 && x < 120) {
+            document.getElementById("showCheck").innerHTML = " Tuổi của bạn là " + x + " tuổi";
+        } else {
+            document.write("Bạn là quái vật rồi");
+        }
+
+    </script>
+</body>
+
+</html>

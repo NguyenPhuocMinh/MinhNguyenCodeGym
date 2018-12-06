@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cạnh của 1 tam giác</title>
+    <p id="showCanh"></p>
+</head>
+
+<body>
+    <script>
+        var a = parseFloat(prompt("Nhập a"));
+        var b = parseFloat(prompt("Nhập b"));
+        var c = parseFloat(prompt("Nhập c"));
+        a, b, c > 0;
+        if (a + b > c) {
+            if (b + c > a) {
+                if (a + c > b) {
+                    alert("Đây là các cạnh của 1 tam giác ");
+                } else {
+                    alert("Đây không phải là các cạnh của 1 tam giác");
+                }
+            } else {
+                alert("Đây là các cạnh của 1 tam giác");
+            }
+        } else {
+            alert("Đây không phải là các cạnh của 1 tam giác");
+        }
+    </script>
+</body>
+
+</html>
