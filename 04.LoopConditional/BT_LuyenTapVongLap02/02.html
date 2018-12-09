@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tính giai thừa của một số nguyên dương</title>
+    <h1>Minh Nhựa</h1>
+</head>
+
+<body>
+
+    <script>
+        var n = parseInt(prompt("Nhập số nguyên dương"));
+        var soA = 1;
+        var giaiThua = 1;
+        while (n <= 0 || n > 10) {
+            n = parseInt(prompt("Nhập số nguyên dương"));
+        } while (soA <= n) {
+            giaiThua *=  soA;
+            soA++;
+            document.write(n + "!=" + giaiThua );
+        }
+
+    </script>
+
+
+</body>
+
+</html>

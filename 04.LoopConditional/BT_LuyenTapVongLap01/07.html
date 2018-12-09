@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fizz Buzz</title>
+    <h1>Dãy Số</h1>
+    <p id="showVongLap"></p>
+</head>
+
+<body>
+
+    <script>
+        var nums = parseInt(prompt("Nhập số từ 1 đến 100"));
+        for (i = 1; i <= 100; i++) {
+            document.write(i + "<br>");
+            if (i % 3 == 0 ) {
+                document.write("Fizz" + "<br>");
+            } 
+            if ( i % 5 == 0){
+                document.write("Buzz" + "<br>");
+            }else if (i % 3==0 && i % 5==0){
+                document.write("FizzBuzz" + "<br>");
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

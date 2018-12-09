@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tính Tổng 20 số đầu tiên của dãy Fibonacci</title>
+    <h1>Dãy Số Fibonacci</h1>
+</head>
+
+<body>
+
+    <script>
+        var n1 = 0;
+        var n2 = 1;
+        var sopt = parseInt(prompt("Nhập số lượng trong dãy Fibonacci cần tìm"));
+        var i;
+
+        for (i = 2; i < sopt; i++) {
+            var n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+            if (sopt < "20") {
+                var sum = 0;
+                sum += n3 + n2 + n1;
+                document.write(sum);
+                break;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

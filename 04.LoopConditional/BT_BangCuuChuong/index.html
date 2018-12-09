@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vòng Lặp Lồng Nhau</title>
+    <h1>Dãy Số</h1>
+    <p id="showVongLap"></p>
+</head>
+
+<body>
+
+    <script>
+        var sout;
+        sout = "<table border ='1' width='900' cellspacing='0' cellpadding='3'>";
+        for (i = 1; i <= 9; i++) {
+            sout = sout + "<tr>";
+            for (j = 2; j <= 9; j++) {
+                sout = sout + "<td>" + j + "x" + i + "=" + i * j + "</td>";
+            }
+            sout = sout + "</tr>";
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+
+</body>
+
+</html>

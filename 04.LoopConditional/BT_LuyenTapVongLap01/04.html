@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hiển thị số đầu tiên của dãy Fibonacci chia hết cho 5</title>
+    <h1>Dãy Số Fibonacci</h1>
+</head>
+
+<body>
+
+    <script>
+        var n1 = 0;
+        var n2 = 1;
+        var sopt = parseInt(prompt("Nhập số lượng trong dãy Fibonacci cần tìm"));
+        var i;
+        for (i = 2; i < sopt; i++) {
+            var n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+
+            if (n3 % 5 == 0) {
+                document.write(n3);
+                break;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
