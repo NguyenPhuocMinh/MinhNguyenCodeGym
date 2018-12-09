@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+</head>
+
+<body>
+    <script>
+        var x = [15, 8, 7, 3, 4, 5, "V", 6, 10, 9];
+        var V = [6];
+        document.write("Dãy số nguyên là " + x.join() + "<br>")
+        x.sort(function (a, b) { return a - b });
+        x.push("0");
+        document.write("Chỉnh sửa xong là " + x);
+        for (var i = 0; i < x.length; i++) {
+            x = prompt("Nhập số nguyên dương");
+
+            if (V == x[i]) {
+                alert("V is in the array");
+            } else {
+                alert("V is not in the array ");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

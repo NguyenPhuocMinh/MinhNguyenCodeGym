@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Từ Điển</h1>
+</head>
+
+<body>
+    <input type="text" id="tdValue" />
+    <input type="button" id="tdTiengViet" value="Tiếng Việt" onclick=showTĐTV(); />
+    <input type="button" id="tdTiengAnh" value="Tiếng Anh" onclick=showTĐTA(); />
+    <p id="result"></p>
+    <script>
+        var vietNamese = ["Nhà", "Cá", "Gà", "Heo", "Chó"];
+        var engLish = ["Home", "Fish", "Chicken", "Pig", "Dog"];
+
+        function showTĐTV() {
+            vietNamese[i] = document.getElementById("tdValue").value;
+            for (var i = 0; i < vietNamese.length; i++) {
+                for (var j = 0; j < engLish.length; j--) {
+                        document.getElementById("result").innerHTML = vietNamese[i];
+                    }
+                }
+            }
+        
+        function showTĐTA() {
+            engLish[j] = document.getElementById("tdValue").value;
+            for (var i = 0; i < vietNamese.length; i++) {
+                for (var j = 0; j < engLish.length; j++) {
+                    if (tdValue == engLish[j]) {
+                        document.getElementById("result").innerHTML = vietNamese[i];
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

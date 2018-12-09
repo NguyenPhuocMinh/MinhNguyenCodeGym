@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+</head>
+
+<body>
+    <script>
+        var number = [-1, 0, 1, 2, 3, 4, 5, 6, 7, 9];
+        document.write(number.toString() + "<br>");
+        var index = 0;
+        var max = number[8];
+        for (var i =0; i < number.length; i++) {
+            if (number[i] > max) {
+                max = number[i];
+                index = i;
+                document.write("Max is " + number[i] + " found at " + index + "<br>");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
