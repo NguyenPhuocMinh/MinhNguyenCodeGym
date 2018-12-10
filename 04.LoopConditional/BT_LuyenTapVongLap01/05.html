@@ -11,17 +11,17 @@
     <script>
         var n1 = 1;
         var n2 = 0;
-        var n3 = 0;//Biến tạm
+        var temp = 0;//Biến tạm
 
-        var sopt = 20;
-        var dem = 0;
+        var numbers = 20;
+        var count = 0;
         var result = 0 ; //Tổng
-        while (dem < sopt){
-            n3 = n1;
+        while (count < numbers){
+            temp = n1;
             n1 = n1 + n2;
-            n2 = n3 ;
+            n2 = temp ;
             result += n2 ;
-            dem++;
+            count++;
 
         }
         alert (result);
