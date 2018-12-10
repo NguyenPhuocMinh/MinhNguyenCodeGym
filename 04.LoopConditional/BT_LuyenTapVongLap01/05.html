@@ -9,24 +9,23 @@
 <body>
 
     <script>
-        var n1 = 0;
-        var n2 = 1;
-        var sopt = parseInt(prompt("Nhập số lượng trong dãy Fibonacci cần tìm"));
-        var i;
+        var n1 = 1;
+        var n2 = 0;
+        var n3 = 0;//Biến tạm
 
-        for (i = 2; i < sopt; i++) {
-            var n3 = n1 + n2;
-            n1 = n2;
-            n2 = n3;
-            if (sopt < "20") {
-                var sum = 0;
-                sum += n3 + n2 + n1;
-                document.write(sum);
-                break;
-
-            }
+        var sopt = 20;
+        var dem = 0;
+        var result = 0 ; //Tổng
+        while (dem < sopt){
+            n3 = n1;
+            n1 = n1 + n2;
+            n2 = n3 ;
+            result += n2 ;
+            dem++;
 
         }
+        alert (result);
+        
 
 
 

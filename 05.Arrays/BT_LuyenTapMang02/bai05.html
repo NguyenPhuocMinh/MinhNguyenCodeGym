@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plactis</title>
+</head>
+
+<body>
+    Chuỗi 1 <input type="text" id="chuoiA" /> <br> <br>
+    Chuỗi 2 <input type="text" id="chuoiB" /> <br> <br>
+    <input type="button" id="checked" value="Chek" onclick="showResult();" /> <br> <br>
+    <p id="result"></p>
+    <script>
+        function showResult() {
+            var namesA = document.getElementById("chuoiA").value;
+            var namesB = document.getElementById("chuoiB").value;
+            if (namesA === namesB) {
+                document.write("Bằng rồi nè má!");
+            } else {
+                document.write("Sai rồi!");
+            }
+        }
+    </script>
+</body>
+
+</html>

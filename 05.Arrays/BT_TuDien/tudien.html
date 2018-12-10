@@ -16,21 +16,20 @@
         var engLish = ["Home", "Fish", "Chicken", "Pig", "Dog"];
 
         function showTĐTV() {
-            vietNamese[i] = document.getElementById("tdValue").value;
+            var word = document.getElementById("tdValue").value;
             for (var i = 0; i < vietNamese.length; i++) {
-                for (var j = 0; j < engLish.length; j--) {
-                        document.getElementById("result").innerHTML = vietNamese[i];
-                    }
+                if (word === vietNamese[i]) {
+                    document.getElementById("result").innerHTML = engLish[i];
+                    break;
                 }
             }
-        
+        }
         function showTĐTA() {
-            engLish[j] = document.getElementById("tdValue").value;
-            for (var i = 0; i < vietNamese.length; i++) {
-                for (var j = 0; j < engLish.length; j++) {
-                    if (tdValue == engLish[j]) {
-                        document.getElementById("result").innerHTML = vietNamese[i];
-                    }
+            var word = document.getElementById("tdValue").value;
+            for (var i = 0; i < engLish.length; i++) {
+                if (word === engLish[i]) {
+                    document.getElementById("result").innerHTML = vietNamese[i];
+                    break;
                 }
             }
         }
