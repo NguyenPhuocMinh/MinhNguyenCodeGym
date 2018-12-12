@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+
+<body>
+
+    <script>
+        var starName = prompt("Nhập tên của ngôi sao");
+        var starNames = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        var constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", " Aquila", "Ursa Major", " Leo"];
+        var result = searchConstellationByStarName(starName);
+        alert(result);
+
+
+        function searchConstellationByStarName(starName) {
+            var result = "Không tìm thấy";
+            for (var i = 0; i < starNames.length; i++) {
+                if (starNames[i] === starName) {
+                    result = constellation[i];
+                    break;
+                }
+            }
+            return result;
+        }
+    </script>
+
+
+</body>
+
+</html>
