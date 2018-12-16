@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Tìm Min Của 3 số nguyên bất kỳ</h1>
+
+<body>
+
+    <script>
+        var numberA = parseInt(prompt("Nhập số a"));
+        var numberB = parseInt(prompt("Nhập số b"));
+        var numberC = parseInt(prompt("Nhập số c"));
+        function checkNumbers() {
+          var  min = numberA;
+            if (min > numberB) {
+                min = numberB;
+            }
+            if (min > numberC) {
+                min = numberC;
+            }
+            return min;
+        }
+        var min = checkNumbers();
+        document.write("Min is " + min);
+    </script>
+
+
+</body>
+
+</html>

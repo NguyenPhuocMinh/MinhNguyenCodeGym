@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Kiểm tra ký tự có phải số không?</h1>
+
+<body>
+    
+   
+   
+    <script>
+
+        var characters = parseInt(prompt("If You Want"));
+        function checkNumber(characters) {
+            var result = false;
+            for (var i = 0; i < characters; i++) {
+                if (!isNaN(characters)){
+                    result = true;
+                    break;
+                }
+            }
+            return result;
+        }
+        var result = checkNumber(characters);
+        alert(result);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

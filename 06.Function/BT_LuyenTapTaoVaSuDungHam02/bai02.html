@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    Nhập Bán kính r <input type="text" id="radius" oninput="circleArea();"> <br><br>Area is(Diện Tích) : <span id="result1"></span>
+    <br><br> Perimeter is(Chu Vi) : <span id="result2"></span>
+
+<body>
+
+    <script>
+        function circleArea() {
+            var bankinh = document.getElementById("radius").value;
+            var result1 = 3.14 * bankinh*bankinh;
+            document.getElementById("result1").innerHTML = result1;
+            var result2 = 2 * bankinh * 3.14;
+            document.getElementById("result2").innerHTML = result2;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

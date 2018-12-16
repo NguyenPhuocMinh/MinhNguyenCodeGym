@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Kiểm tra số nguyên âm</h1>
+<body>
+    
+   <script>
+       var numbers = parseInt(prompt("What do you want?"));
+       function checkNumber(numbers){
+           var result = "";
+           for (var i = -100; i < numbers; i++){
+               if ( numbers < 0){
+                   result = true;
+               }else {
+                   result = false;
+               }
+           }
+           return result;
+       }
+       var result = checkNumber(numbers);
+       alert(result);
+    
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Kiểm tra số lần xuất hiện kí tự đặc biệt</h1>
+
+<body>
+
+
+
+    <script>
+        var characters = ["a", "b", "c", "d", "1", "2", "3", "h"];
+        document.write(characters + "<br>")
+
+        function checkCharacters(characters) {
+            var count = 0;
+
+            for (var i = 0; i < characters.length; i++) {
+                if (!isNaN(characters[i])) {
+                    count++;
+                    
+                }
+            }
+            return count;
+        }
+        var count = checkCharacters(characters);
+        document.write("Số lần xuất hiện của ký tự đặc biệt là " + count);
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
