@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Kiểm tra Mã bảo mật </h1>
+</head>
+
+<body>
+    <script>
+        var code = prompt("Nhập code");
+        alert(testCode(code));
+        console.log(testCode(code));
+        function testCode(str) {
+            string = /(^[QA]{2})-([0-9]{4})([A-Z]{2})/;
+            if (string.test(str)) {
+                return true;
+                
+            } else {
+                return false;
+            }
+        }
+        
+        
+    </script>
+
+
+</body>
+
+</html>

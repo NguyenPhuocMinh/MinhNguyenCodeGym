@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Tính thời gian mà bạn đã sống</h1>
+</head>
+
+<body>
+    <script>
+        // 1.
+        var born = new Date(1996, 05, 05, 00, 00, 00);
+        // 2.
+        var present = new Date();
+        // 3.
+        var years = present.getFullYear() - born.getFullYear();
+        console.log("Số năm tuổi của mình: ", years);
+
+        var months = present.getMonth() - born.getMonth();
+        console.log("Số tháng tuổi của mình: ", getMonth(born, present));
+
+        function getMonth(d1, d2) {
+            var months;
+            months = (d2.getFullYear() - d1.getFullYear()) * 12;
+            months -= d1.getMonth() + 1;
+            months += d2.getMonth();
+            return months <= 0 ? 0 : months;
+        }
+
+        var days = present.getDay() - born.getDay();
+        console.log("Số ngày tuổi của tui: ", getDay(born, present));
+
+        function getDay(d1, d2) {
+            var days = (d2.getFullYear() - d1.getFullYear()) * 30 * 12;
+            return days;
+        }
+
+        var hours = present.getHours() - born.getHours();
+        console.log("số giờ tuổi của tui: ", getHours(born, present));
+
+        function getHours(d1, d2) {
+            var hours = (d2.getFullYear() - d1.getFullYear()) * 30 * 12 * 24;
+            return hours;
+        }
+
+        var minutes = present.getMinutes() - born.getMinutes();
+        console.log("số phút tuổi của tui: ", getMinutes(born, present));
+
+        function getMinutes(d1, d2) {
+            var minutes = (d2.getFullYear() - d1.getFullYear()) * 30 * 12 * 24 * 60;
+            return minutes;
+        }
+
+        var seconds = present.getSeconds() - born.getSeconds();
+        console.log("số giây tuổi của tui: ", getSeconds(born, present));
+
+        function getSeconds(d1, d2) {
+            var seconds = (d2.getFullYear() - d1.getFullYear()) * 30 * 12 * 24 * 60 * 60;
+            return seconds;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

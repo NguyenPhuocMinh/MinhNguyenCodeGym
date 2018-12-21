@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Đếm số nguyên âm/phụ âm trong 1 chuỗi</h1>
+</head>
+
+<body>
+    <script>
+        var string = "Minh Plastic";
+        console.log("Số nguyên âm là " + countVowel(string));
+        console.log("Số Phụ âm là " + countConsonant(string));  
+
+        function countVowel(str) {
+            var count = 0;
+            var pattern = /[aAiIuUeEoO]/;
+            for (var i = 0; i < str.length; i++) {
+                if (pattern.test(str[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        
+
+        function countConsonant(str) {
+            var count = 0;
+            var pattern = /[bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTvVwWxXyYzZ]/;
+            for (var j = 0; j < str.length; j++) {
+                if (pattern.test(str[j])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

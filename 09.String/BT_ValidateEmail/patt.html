@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Validate Email</h1>
+</head>
+
+<body>
+    <script>
+        var pattern;
+        function is_Pattern(str) {
+            pattern = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+            if (pattern.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var email = "abc@gmail.com";
+        console.log(is_Pattern(email));
+        var email1 = "ab@yahoo.com";
+        console.log(is_Pattern(email1));
+        var email2 = "abc@hotmail.com";
+        console.log(is_Pattern(email2));
+
+        var email3 = "@gmail.com";
+        console.log(is_Pattern(email3));
+        var email4 = "@gmail.com";
+        console.log(is_Pattern(email4));
+        var email5 = "@gmail.com";
+        console.log(is_Pattern(email5));
+
+    </script>
+</body>
+
+</html>

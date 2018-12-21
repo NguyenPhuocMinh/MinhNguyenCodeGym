@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Validate Of Name Class</h1>
+</head>
+
+<body>
+    <script>
+        var patt;
+        function is_validateClass(str) {
+            patt = /^[CAP]+([0-9]{4})+([GHIKLM]+)$/;
+            if (patt.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        //Hợp lệ:
+        var class1 = "C0318G";
+        console.log(is_validateClass(class1));
+        var class2 = "A1234H";
+        console.log(is_validateClass(class2));
+        var class3 = "P0318K";
+        console.log(is_validateClass(class3));
+        // Không hợp lệ:
+        var class4 = "B0318G";
+        console.log(is_validateClass(class4));
+        var class5 = "D0318G";
+        console.log(is_validateClass(class5));
+        var class6 = "E0318G";
+        console.log(is_validateClass(class6));
+    </script>
+
+
+</body>
+
+</html>

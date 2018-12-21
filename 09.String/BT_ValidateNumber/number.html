@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Validate Of Number Telephone </h1>
+</head>
+
+<body>
+    <script>
+        var patt;
+        function isValidateNumberTelephone(str) {
+            patt = /\([0-9]{2}\)-\(0[0-9]{9}\)/;
+            if (patt.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        //Hợp lệ:
+        var number = "(84)-(0120910292)";
+        console.log(isValidateNumberTelephone(number));
+        //Không hợp lệ:
+        var number1 = "(a8)-(222222222)";
+        console.log(isValidateNumberTelephone(number1));
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+<script>
+    var patt;
+    function is_Pattern (str){
+        patt = /^[_a-z0-9]{6,}$/;
+        if (patt.test(str)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+// Hợp lệ
+    var account1 = "123abc_";
+    console.log(is_Pattern(account1));
+
+    var account2 = "_abc123";
+    console.log(is_Pattern(account2));
+
+    var account3 = "______";
+    console.log(is_Pattern(account3));
+
+    var account4 = "123456";
+    console.log(is_Pattern(account4));
+
+    var account5 = "abcdefg";
+    console.log(is_Pattern(account5));
+
+// Không hợp lệ
+    var account6 = ".@";
+    console.log(is_Pattern(account6));
+
+    var account7 = "12345";
+    console.log(is_Pattern(account7));
+
+    var account8 = "1234_";
+    console.log(is_Pattern(account8));
+
+    var account9 = "abcde ";
+    console.log(is_Pattern(account9));
+
+</script>

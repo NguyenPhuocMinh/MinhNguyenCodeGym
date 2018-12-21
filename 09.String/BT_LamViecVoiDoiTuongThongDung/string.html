@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+</head>
+
+<body>
+    <script>
+        // bước 1 :
+        var string = "Tôi yêu ngôn ngữ lập trình Javascript";
+        console.log(countNumber(string));
+        function countNumber(str) {
+            var count = 0;
+            var char = /[a]/;
+            for (var i = 0; i < str.length; i++) {
+                if (char.test(str[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        // bước 2 :
+        var a = string.split("");
+        console.log(a)
+        // bước 3 :
+
+        console.log("Số lượng ký tự trong chuỗi là : " ,countCharecter(string));
+        function countCharecter(str){
+            var count = 0;
+            for (var i = 0 ; i < str.length ; i++){
+                if (isNaN(str)){
+                    count++;
+                }
+            }
+            return count;
+        }
+        // bước 4 :
+        var b = string.replace("Javascript","Typescript");
+        console.log("Thay thế chữ 'Javascript' thành " , b);
+    </script>
+
+</body>
+
+</html>

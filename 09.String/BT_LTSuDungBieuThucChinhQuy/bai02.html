@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Đếm số từ trong 1 chuỗi</h1>
+</head>
+
+<body>
+    <script>
+        var string = "Minh Iot 777";
+        console.log("So tu trong chuoi '", string, "' là: ", countStr(string));
+
+        function countStr(str) {
+            var count = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (isNaN(str[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+    </script>
+
+
+</body>
+
+</html>
