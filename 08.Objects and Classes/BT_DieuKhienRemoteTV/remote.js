@@ -2,6 +2,7 @@ var Remote = function () {
 
     this.code;
     this.status = true;
+    
     this.connectoTiVi = function (code) {
         this.code = code;
     }

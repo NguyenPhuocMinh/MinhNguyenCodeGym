@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+</head>
+
+<body style="background-color: lightblue">
+    <h3>Add Product Name</h3>
+    <div style="border-radius:10px;background-color:green;padding:40px;width:18%">
+        <form>
+            <input type="text" id="txtValue" style="width:150px;padding:10px" placeholder="New Product">
+            <input type="button" value="Add" onclick="addProduct()" style="width:80px;padding:10px">
+        </form>
+    </div>
+    <br></br>
+    <h3>Display All Product</h3>
+    <table>
+        <tbody>
+            <tr>
+                <th style="text-align: left;width:200px;color:hotpink;"> Product Name</th>
+                <th style="text-align: right; color:green;width:100px" colspan="2">
+                    <p id="counter"></p>
+                </th>
+            </tr>
+        </tbody>
+        <tbody id="products"></tbody>
+    </table>
+    <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Tìm vị trí của số trong Mảng</h1>
+</head>
+
+<body>
+    <script>
+        var nums = [];
+        for (var i = 0; i < 100; i++) {
+            if (i > 0 && i % 10 == 0) {
+                document.write("<br>");
+            }
+            nums[i] = Math.floor(Math.random() * 101);
+            document.write(nums[i] + "&nbsp&nbsp");
+        }
+
+        var value = parseInt(prompt("Enter a value to search"));
+
+        function searchNumber(nu) {
+            for (var i = 0; i < nums.length; i++) {
+                if (nums[i] === value) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        function countNumber(){
+            var count = 0;
+            for (var i = 0 ; i < nums.length;i ++){
+                if (nums[i] === value ){
+                    count++;
+                }
+            }
+            return count;
+        }
+        document.write("<br>");
+        document.write("<br/>");
+        document.write("Value to search is : " + value + " Found at " + searchNumber(nums) + "<br>" + " số phần tử xuất hiện của value là : " + countNumber());
+    </script>
+</body>
+
+</html>

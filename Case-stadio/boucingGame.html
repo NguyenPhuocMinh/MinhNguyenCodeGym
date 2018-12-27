@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+</head>
+
+<body style="background-color: purple" onload="drawBall()">
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+    <script src="gameBoard.js"></script>
+    <script src="ball.js"></script>
+    <script src="bar.js"></script>
+    <br></br>
+    <input type="button" onclick="moveRight()" value="Click moveRight">
+    <input type="button" onclick="moveDown()" value="Click moveDown">
+
+    <script>
+        var boucing = null;
+        boucing = document.getElementById("myCanvas");
+        function init() {
+            boucing = document.getElementById("myCanvas");
+            boucing.style.position = 'relative';
+            boucing.style.left = '0px';
+            boucing.style.top = '0px';
+        }
+        function moveRight() {
+            boucing.style.left = parseInt(boucing.style.left) + 50 + 'px';
+        }
+        function moveDown() {
+            boucing.style.top = parseInt(boucing.style.top) + 50 + 'px';
+        }
+
+        window.onload = init;
+    </script>
+</body>
+
+</html>

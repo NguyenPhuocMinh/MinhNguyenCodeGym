@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Đoán số</h1>
+</head>
+
+<body>
+    <script>
+
+
+        var number = parseInt(prompt("Đoán số"));
+        console.log(checkNumbers(number));
+
+        function checkNumbers(value) {
+            var array = [50, 76, 81, 82, 83, 84, 85, 86, 87, 88];
+            var index = -1;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] == value && value == 82) {
+                    console.log("Correct");
+                    document.write("Correct");
+                    index = i + 1;
+                    break;
+                }
+                if (array[i] == value && value == 50) {
+                    console.log("to low");
+                    document.write("to low");
+                    index = i + 1;
+                    break;
+                }
+                if (array[i] == value && value == 76) {
+                    console.log("too low");
+                    document.write("to low");
+                    index = i + 1;
+                    break;
+                }
+                if (array[i] == value && value == 88) {
+                    console.log("too hight");
+                    document.write("to hight");
+                    index = i + 1;
+                    break;
+                }
+                if (array[i] == value && value == 81) {
+                    console.log("too low");
+                    document.write("to low");
+                    index = i + 1;
+                    break;
+                }
+                if (array[i] == value && value == 84) {
+                    console.log("too hight");
+                    document.write("to hight");
+                    index = i + 1;
+                    break;
+                } else {
+                    console.log("You not right");
+                }
+            }
+            return index;
+        }
+    </script>
+</body>
+
+</html>

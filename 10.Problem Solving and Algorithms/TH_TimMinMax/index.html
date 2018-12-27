@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Tìm Min/Max</h1>
+</head>
+
+<body>
+    <script>
+        var nums = [];
+        for (var i = 0; i < 100; i++) {
+            if (i > 0 && i % 10 == 0) {
+               document.write("<br>");
+            }
+            nums[i] = Math.floor(Math.random() * 101);
+            document.write(nums[i] + "&nbsp&nbsp&nbsp");
+        }
+
+        var minValue = findMin(nums);
+        var maxValue = findMax(nums);
+
+        document.write("<br/>");
+        document.write("The minimum value is : ", minValue + "<br/>");
+        document.write("The maximum value is : ", maxValue + "<br>");
+
+        
+        function findMin(arr) {
+            var min = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+
+        function findMax(arr) {
+            var max = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+    </script>
+</body>
+
+</html>

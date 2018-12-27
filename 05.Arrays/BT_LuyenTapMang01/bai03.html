@@ -10,30 +10,18 @@
         var number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         document.write(number.toString() + "<br>");
         var index = 0;
+        var tb = 0;
         var max = number[9];
         for (var i = 0; i < number.length; i++) {
+            tb += number[i];
             if (number[i] > max) {
                 max = number[i];
-                index = i;
+                index = i + 1;
                 document.write("Max is " + number[i] + " found at " + index + "<br>");
-            } while (number[i] < 1) {
-                var stb0 = (number[0] + number[10]) / 2;
-                document.write("số trung bình của 0 va 10 là " + stb0 + "<br>");
-                var stb1 = (number[2] + number[5]) / 2;
-                document.write("số trung bình của 2 và 5 là " + stb1 + "<br>");
-                var stb2 = (number[3] + number[6]) / 2;
-                document.write("số trung bình của 3 và 6 là  " + stb2 + "<br>");
-                var stb3 = (number[1] + number[7]) / 2;
-                document.write("số trung bình của 1 và 7 là  " + stb3 + "<br>");
-                var stb4 = (number[5] + number[8]) / 2;
-                document.write("số trung bình của 5 và 8 là  " + stb4 + "<br>");
-                var stb5 = (number[6] + number[4]) / 2;
-                document.write("số trung bình của 6 và 4 là  " + stb5 + "<br>");
-                i++;
-                
-            }
+            } 
         }
-
+        console.log(tb / number.length);
+    
     </script>
 
 </body>

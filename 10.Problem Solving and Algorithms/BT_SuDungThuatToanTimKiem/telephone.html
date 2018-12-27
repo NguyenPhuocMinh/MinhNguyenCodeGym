@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minh Plastic</title>
+    <h1>Kiểm tra số điện thoại thuộc Mạng viettel</h1>
+</head>
+
+<body>
+    <script>
+        var number = parseInt(prompt("Nhập số điện thoại để kiểm tra"));
+        console.log(checkTelephoneViettel(number));
+        console.log(checkTelephoneVina(number));
+        console.log(checkTelephoneMobile(number));
+
+
+        function checkTelephoneViettel(numb1) {
+            var result;
+            var telephone1 = /^[032||033||034][0-9]{8}/;
+            if (telephone1.test(numb1)) {
+                return result = "Đây là số điện thoại của mạng Viettel";
+            } else {
+                return result = "Đây không phải là số điện thoại của mạng Viettel";
+            }
+        }
+
+        function checkTelephoneVina(numb2) {
+            var result;
+            var telephone2 = /^[081||082||084][0-9]{8}/;
+            if (telephone2.test(numb2)) {
+                return result = "Đây là  số điện thoại của mạng Vinaphone";
+            } else {
+                return result = "Đây không phải số điện thoại của mạng Vinaphone";
+            }
+        }
+
+        function checkTelephoneMobile(numb3) {
+            var result;
+            var telephone3 = /^[070||079||077][0-9]{8}/;
+            if (telephone3.test(numb3)) {
+                return result = "Đây là  số điện thoại của mạng Mobilephone";
+            } else {
+                return result = "Đây không phải số điện thoại của mạng Mobilephone";
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
