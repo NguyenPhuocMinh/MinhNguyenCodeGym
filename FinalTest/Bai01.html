@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find Min Score</title>
+</head>
+
+<body>
+    <script>
+        var score = [90, 80, 75, 30, 40];
+        console.log( "Min Score is " + findMinScrore(score) +  " ở vị trí " + index );
+        var index = -1;
+        function findMinScrore(score) {
+            var min = score[0];
+            for (var i = 1; i < score.length; i++) {
+                if (score[i] < min) {
+                    min = score[i];
+                    index = i;
+                }
+            }
+            return min;
+        }
+    </script>
+
+</body>
+
+</html>

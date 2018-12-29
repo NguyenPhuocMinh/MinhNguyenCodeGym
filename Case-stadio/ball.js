@@ -37,11 +37,11 @@ function drawBall() {
 setInterval(drawBall, 15);
 
 function ballReset() {
-    x = canvas.width / 2;
-    y = canvas.height / 2;
+    x = canvas.width / 4;
+    y = canvas.height / 4;
 }
 function checBallBar() {
-    if (y > canvas.height - 70 && y < canvas.height + 10 && x > barX && x < barX + 100) {
+    if (y > canvas.height - 90 && y < canvas.height + 10 && x > barX && x < barX + 100) {
         dy *= -1;
     }
 }

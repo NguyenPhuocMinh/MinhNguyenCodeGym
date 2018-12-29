@@ -7,21 +7,38 @@
 
 <body>
     <script>
-        var x = [15, 8, 7, 3, 4, 5, "V", 6, 10, 9];
-        var V = [6];
-        document.write("Dãy số nguyên là " + x.join() + "<br>")
-        x.sort(function (a, b) { return a - b });
-        x.push("0");
-        document.write("Chỉnh sửa xong là " + x);
-        for (var i = 0; i < x.length; i++) {
-            x = prompt("Nhập số nguyên dương");
 
-            if (V == x[i]) {
-                alert("V is in the array");
-            } else {
-                alert("V is not in the array ");
+        // Bài 6
+        var x = [15, 8, 7, 3, 4, 5, 20, 6, 10, 9];
+        var v = parseInt(prompt("Nhâp sô V vào đi cưng: "));
+        var indexV = - 1;
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] == v) {
+                indexV = i;
+                break; 
             }
         }
+
+        document.write("Dãy số nguyên là " + x.join() + "<br>");
+
+        if (indexV >= 0) {
+            document.write("Số " + v + " có trong.");
+        } else {
+            document.write("Số " + v + " ở ngoài.");
+        }
+
+        // Bài 7
+
+        if (indexV >= 0) {
+            // Chạy tới trước phần từ cuối cùng.
+            for (var i = indexV; i < x.length - 1; i ++) {
+                x[i] = x[i + 1];
+            }
+            // Xóa phần từ cuối cùng.
+            x.pop();
+            x.push("0");
+        }
+        document.write("<br>Dãy số nguyên sau khi dịch chuyển là " + x.join() + "<br>");
     </script>
 
 </body>

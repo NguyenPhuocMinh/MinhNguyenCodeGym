@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Số nguyên tố</title>
+</head>
+
+<body>
+    <script>
+        var numbers = parseInt(prompt("Số nguyên tố cần tìm"));
+        
+
+        function isPrime(numbers) {
+            var result = true;
+            if (numbers !== 2) {
+                for (var i = 2; i < numbers - 1; i++) {
+                    if (numbers % i == 0) {
+                        result = false;
+                        break;
+                    }
+                }
+            }
+            return result;
+        }
+        console.log(isPrime(numbers));
+    </script>
+
+</body>
+
+</html>

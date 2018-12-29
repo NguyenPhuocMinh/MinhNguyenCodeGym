@@ -7,17 +7,22 @@
 
 <body>
     <script>
-        var x = [0, 1, 2, 3, 4, "V", 6, 7, 8, 9, 10];
-        var V = [5];
-        document.write(x.join() + "<br>");
+        var x = [15, 8, 7, 3, 4, 5, 20, 6, 10, 9];
+        var v = parseInt(prompt("Nhâp sô V vào đi cưng: "));
+        var indexV = - 1;
         for (var i = 0; i < x.length; i++) {
-            x = prompt("Nhập số nguyên dương");
-            if (V == x[i]) {
-                alert("V is in the array");
-            } else {
-                alert("V is not in the array ");
+            if (x[i] == v) {
+                indexV = i;
+                break;
             }
+        }
 
+        document.write("Dãy số nguyên là " + x.join() + "<br>");
+
+        if (indexV >= 0) {
+            document.write("Số " + v + " có trong.");
+        } else {
+            document.write("Số " + v + " ở ngoài.");
         }
 
 

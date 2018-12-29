@@ -11,9 +11,9 @@
     <script>
         function circleArea() {
             var bankinh = document.getElementById("radius").value;
-            var result1 = 3.14 * bankinh*bankinh;
+            var result1 = Math.PI * bankinh*bankinh;
             document.getElementById("result1").innerHTML = result1;
-            var result2 = 2 * bankinh * 3.14;
+            var result2 = 2 * bankinh * Math.PI;
             document.getElementById("result2").innerHTML = result2;
         }
 
